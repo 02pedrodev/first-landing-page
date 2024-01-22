@@ -1,0 +1,108 @@
+:root {
+    --fuchsia-600: #c026d3;
+    --fuchsia-700: #a21caf;
+    --fuchsia-800: #86198f;
+    --blueGray-900: #0f172a;
+    --blueGray-600: #475569;
+  }
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: var(--blueGray-600);
+  }
+  
+  button{
+    padding:12px 2rem;
+      border-radius: 26px;
+    border: none;
+    background-color:var(--fuchsia-600);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  /* Header */
+  header {
+    padding: 1.5rem 5rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--blueGray-900);
+  }
+  .logo .logo-purple{
+    color:var(--fuchsia-800);
+  }
+  .nav-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+   .nav-container > nav > ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    list-style: none;
+    color: var(--blueGray-900);
+  }
+  
+  .nav-container > nav > ul > .nav-item{
+     text-transform: capitalize;
+     font-weight: 600;
+   }
+  .nav-container .header-button{
+    font-size: 16px;
+    border-radius: 18px;
+  }
+   
+  /* Hero */
+  .hero{
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .hero-container{
+    margin: 0 auto;
+    text-align: center;
+    padding: 5rem 0;
+  }
+  
+  .hero .hero-container .hero-title {
+    font-size: 5rem;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right, var(--fuchsia-600), var(--fuchsia-800));
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  
+  .hero .hero-container .hero-subtitle{
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+  .hero .hero-container .hero-cta > input{
+    width: 600px;
+    margin-right: 1rem;
+    padding: 12px 1.5rem ;
+    border-radius: 18px;
+    border: 0.1px solid var(--blueGray-600);
+    outline: none;
+    font-size: 1rem; 
+  }
+  
+  .hero .hero-picture{
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+ 
